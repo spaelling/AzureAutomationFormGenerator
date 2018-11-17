@@ -83,7 +83,8 @@
     },
     "variables": {
         "apiSiteName": "[concat(parameters('siteName'), 'Api')]",
-        "project": "src\\AzureAutomationFormGenerator\\AzureAutomationFormGenerator.WebUI.csproj"
+        "project-web": "src\\AzureAutomationFormGenerator\\AzureAutomationFormGenerator.WebUI.csproj",
+        "project-api": "src\\AzureAutomationFormGenerator-API\\AzureAutomationFormGenerator.WebUI.csproj"
     },
     "resources": [
         {
@@ -165,7 +166,7 @@
                         "[resourceId('Microsoft.Web/Sites', variables('apiSiteName'))]",
                     ],
                     "properties": {
-                        "PROJECT": "[variables('project')]",
+                        "PROJECT": "[variables('project-web')]",
                         "clientUrl": "[concat('http://', parameters('siteName'), '.azurewebsites.net')]"
                     }
                 },
@@ -218,7 +219,7 @@
                         "[resourceId('Microsoft.Web/Sites', parameters('siteName'))]",
                     ],
                     "properties": {
-                        "PROJECT": "[variables('project')]",
+                        "PROJECT": "[variables('project-api')]",
                         "apiPath": "[concat('http://', variables('apiSiteName'), '.azurewebsites.net/api')]"
                     }
                 },
