@@ -9,7 +9,7 @@
             "type": "string"
         },
         "siteLocation": {
-            "type": "string"
+            "type": "string"            
         },
         "sku": {
             "type": "string",
@@ -20,7 +20,10 @@
                 "Standard", 
                 "Premium"
             ],
-            "defaultValue": "Free"
+            "defaultValue": "Free",
+            "metadata": {
+                "description": "The 'Free' tier is sufficient"
+            }
         },
         "workerSize": {
             "type": "string",
@@ -48,11 +51,14 @@
             "type": "string"
         },
         "sqlServerAdminPassword": {
-            "type": "securestring"
+            "type": "securestring",
+            "metadata": {
+                "description": "must be sufficiently complex or else the deployment will fail"
+            }
         },
         "sqlDbName": {
             "type": "string",
-            "defaultValue": "DemosDB"
+            "defaultValue": "HelloSQLDB"
         },
         "sqlDbCollation": {
             "type": "string",
@@ -64,7 +70,10 @@
         },
         "sqlDbMaxSizeBytes": {
             "type": "string",
-            "defaultValue": "1073741824"
+            "defaultValue": "1073741824",
+            "metadata": {
+                "description": "default set to 1024mb"
+            }
         },
         "sqlDbServiceObjectiveId": {
             "type": "string",
