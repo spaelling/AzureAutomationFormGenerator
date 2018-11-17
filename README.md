@@ -29,4 +29,10 @@ Generate input forms from Azure Automation Runbooks and submit
 ```
 Alternatively create an encrypted key called ClientSecret in Application Settings on your Azure Web App (if you decide to publish it)
 
+deployment based on [https://github.com/azure-appservice-samples/ToDoApp](https://github.com/azure-appservice-samples/ToDoApp)
+
+Microsoft documentation: [https://docs.microsoft.com/en-us/azure/app-service/app-service-deploy-complex-application-predictably](https://docs.microsoft.com/en-us/azure/app-service/app-service-deploy-complex-application-predictably)
+
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+
 
