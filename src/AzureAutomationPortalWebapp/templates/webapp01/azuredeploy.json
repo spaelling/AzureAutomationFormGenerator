@@ -48,7 +48,8 @@
             "type": "string"
         },
         "sqlServerAdminLogin": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "sqladmin"
         },
         "sqlServerAdminPassword": {
             "type": "securestring",
