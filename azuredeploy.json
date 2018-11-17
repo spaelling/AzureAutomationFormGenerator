@@ -204,7 +204,7 @@
              ],
              "properties": {
                 "roleDefinitionId": "[variables('contributorRoleDefinitionId')]",
-                "principalId": "[reference(concat('Microsoft.Web/Sites/', variables('apiSiteName')), '2017-03-30', 'Full').identity.principalId]"
+                "principalId": "[reference(concat('Microsoft.Web/Sites/', variables('apiSiteName')), '2018-02-01', 'Full').identity.principalId]"
                      }
          },        
         {
